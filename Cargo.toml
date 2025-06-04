@@ -1,0 +1,13 @@
+[package]
+name = "tabular"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+eframe = "0.27"
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+sqlx = { version = "0.7", features = ["runtime-tokio-native-tls", "sqlite", "mysql", "postgres"] }
+futures = "0.3"
+egui_extras = "0.31.1"
+egui_code_editor = "0.2.13"
+colorful = "0.3.2"
